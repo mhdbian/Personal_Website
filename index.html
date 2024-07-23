@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+      </head>
+      <body>
+        <nav id="desktop-nav">
+          <h1 class="title">Personal Website</h1>
+          <div>
+            <ul class="nav-links">
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#pengalaman">Pengalaman</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav id="hamburger-nav">
+          <h1 class="logo">Personal Website</h1>
+          <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+              <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+              <li><a href="#pengalaman" onclick="toggleMenu()">Pengalaman</a></li>
+              <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+          </div>
+        </nav>
+        <section id="profile">
+          <div class="section__pic-container">
+            <img src="./assets/profile.png" alt="Muhammad Febrian profile picture" />
+          </div>
+          <div class="section__text">
+            <p class="section__text__p1">Hai, Saya</p>
+            <h1 class="title">Muhammad Febrian</h1>
+            <p class="section__text__p2">Universitas Muhammadiyah Riau</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/resume-example.pdf')"
+              >
+                Download CV
+              </button>
+              <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Info Contact
+              </button>
+            </div>
+            <div id="socials-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://linkedin.com/'"
+              />
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/'"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="blog">
+          <h1 class="title">BLOG</h1>
+          <p class="section__text__p1">Tentang Saya</p>
+          <div class="section-container">
+            <div class="section__pic-container">
+              <img
+                src="./assets/about-pic.png"
+                alt="Profile picture"
+                class="about-pic"
+              />
+            </div>
+            <div class="about-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <img
+                    src="./assets/experience.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <h3>Pengalaman</h3>
+                  <p>Merancang dan Mengembangkan Situs Website menggunakan HTML, CSS dan JavaScript</p>
+                </div>
+                <div class="details-container">
+                  <img
+                    src="./assets/education.png"
+                    alt="Education icon"
+                    class="icon"
+                  />
+                  <h3>Pendidikan</h3>
+                  <p>TK Pertiwi Tembilahan<br />SD Negeri 123 Pekanbaru</p>
+                  <p>SMP Muhammadiyah 01 Pekanbaru<br />SMK Negeri 7 Pekanbaru</p>
+                </div>
+              </div>
+              <div class="text-container">
+                <p>
+                    Hai! Nama saya Muhammad Febrian dan saya adalah Mahasiswa di Universitas Muhammadiyah Riau. Situs ini adalah wadah untuk berbagi pemikiran, pengalaman, dan karya-karya dalam membuat Website Personal menggunakan HTML, CSS dan JavaScript. Saya percaya bahwa setiap pengalaman dan pembelajaran adalah bagian dari perjalanan hidup yang berharga, dan saya senang bisa berbagi hal-hal itu dengan Anda di sini
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+          />
+        </section>
+        <section id="pengalaman">
+          <p class="section__text__p1">Ini adalah</p>
+          <h1 class="title">Pengalaman Saya</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <h2 class="experience-sub-title">Support System</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>HTML</h3>
+                      <p>Pengalaman</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>CSS</h3>
+                      <p>pengalaman</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>JavaScript</h3>
+                      <p>Dasar</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Material UI</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="details-container">
+                <h2 class="experience-sub-title">Software</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Anaconda</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Python.org</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Visual Studio Code</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Sublime Text</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+          />
+        </section>
+        <section id="portfolio">
+          <h1 class="title">Portfolio</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-1.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Modelling 3D</h2>
+                <div class="btn-container">
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-2.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Sketch 2D</h2>
+                <div class="btn-container">
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-3.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Design Arsitektur</h2>
+                <div class="btn-container">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+          />
+        </section>
+        <section id="contact">
+          <p class="section__text__p1">Informasi</p>
+          <h1 class="title">Data Pribadi</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="mailto:examplemail@gmail.com">220401239@student.umri.ac.id</a></p>
+            </div>
+            <div class="contact-info-container">
+            <img
+              src="./assets/whatsapp.png"
+              alt="whatsapp icon"
+              class="icon contact-icon"
+            />
+            <p><a href="contactto:085274677484">085274677484</a></p>
+        </section>
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+        <script src="script.js"></script>
+      </body>
+    </html>
